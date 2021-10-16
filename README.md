@@ -11,9 +11,20 @@ _Note: there might be some slight differences between the measurements I got in 
 
 In Arduino we can use the ``pinMode()`` function to set a pin to be an output, for example, ``pinMode(23, OUTPUT)`` sets pin 23 to be an output. Once set to be an output we can then use the ``digitalWrite()`` function to write a logical value to the pins, for example, ``digitalWrite(23, HIGH)`` to write a 1 (+5/3.3V), and ``digitialWrite(23, LOW)`` to write a 0 (0v).  
 
-__Using these two function write a program that will toggle a pin on your tinyPico as fast as possible, what is the maximum frequency that you can achieve? Include a screenshot in your logbook repository in__ ``lab3/task1``. 
+__Using these two function write a program that will toggle pin 18 on your tinyPico as fast as possible, what is the maximum frequency that you can achieve? Include a screenshot of pulseview in your logbook repository and commit it in__ ``lab3/task1``. 
 
 ## Task 2: digitalWrite() on multiple pins
 
-__Using the__ ``pinMode()`` __and__ ``digitalWrite()`` __functions toggle 6 pins as fast as you can, what is the maximum frequency that you can achieve? Include a screenshot in your logbook repository in__ ``lab3/task2``.
+__Using the__ ``pinMode()`` __and__ ``digitalWrite()`` __functions toggle pins 18,5,22,21,32,33 as fast as you can, what is the maximum frequency that you can achieve? Include a screenshot of pulseview in your logbook repository and commit it in__ ``lab3/task2``.
+
+## Task 3: memory-mapped registers
+
+As discussed in the lecture we can of course also use C pointers and memory mapped hardware registers to control our GPIO pins. 
+
+__Using the GPIO memory-mapped hardware registers create a program that toggles pin 18, what is the maximum frequency that you can achieve now? Include a screenshot of pulseview in your logbook repository and commit it in__ ``lab3/task3``. 
+
+## Task 4: memory-mapped registers multiple pins 
+
+__Using the GPIO memory-mapped hardware registers create a program that toggles pins 18,5,22,21,32,33 what is the maximum frequency that you can achieve now? Include a screenshot of pulseview in your logbook repository and commit it in__ ``lab3/task4``. 
+
 
